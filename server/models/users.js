@@ -1,3 +1,7 @@
 var mongoose = require('mongoose');
 
-let userSchema = 
+let userSchema = new mongoose.Schema({
+    email : String
+})
+
+module

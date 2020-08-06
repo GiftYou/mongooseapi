@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/mongooseapi', {useNewUrlParser: true, useUnifiedTopology: true});
-console.log('just dont failed');
+console.log('connected to the mongooseapi');
 
 app.use('/', indexRouter);
 app.use('/api/users', usersRouter);
